@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/LogoET-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/regempre.css">
+    <title>Datos Empresa</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <div class="logo">
+            <img src="../images/LogoET-1.jpg" alt="" width="100" height="49">
+            <h1>Emplea Talento</h1><br>
+          <nav class="user-options">
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../PAGES/noso.html">En equipo</a></li>
+                <li><a href="../PAGES/sucursales.html">Sucursales</a></li>  
+                <li><a href="../PAGES/registro.html">Registrarse</a></li>
+                <li><a href="../PAGES/inicio_sesion.html">Ingresar</a></li>
+                <li><a href="../PAGES/contacto.html">Contacto</a></li>
+            </ul>
+            
+          </nav>
+          </div>  
+        </div>
+      </header>
+      <br><br>
+    <h2>Datos del usuario</h2>
+    <form action="" class="formulario" id="formulario">
+        <label for="nombre"><b>Nombre(s): </b></label>
+            <input type="text" name="nombre" maxlength="50" required>
+        <br>
+        <label for="apellido"><b>Apellido(s): </b></label>
+            <input type="text" name="apellido" maxlength="50" required>
+        <br>
+
+        <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label"><b>Correo Electrónico</b></label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+        <br>
+
+        <!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label"><b>Contraseña</b></label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label"><b>Repetir Contraseña</b></label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+        <p>
+            <input type="submit" value="Guardar">
+        </p>
+        <p>
+             <input type="reset" value="Borrar">
+        </p>
+        <br>
+        
+    </form><br>
+    <h2>Datos de la empresa</h2>
+    <form action="" id="datos_empre" method="get">
+        <label for="empresa"><b>Nombre de la empresa</b></label>
+            <input type="text" name="empresa" maxlength="50" required>
+        <br>
+        <label for="razon_soc"><b>Razon social:</b></label>
+            <input type="text" name="razon_soc" required>
+        <br>
+        <br>
+        <label for="opciones"><b>Condición Fiscal:</b></label>
+        <select id="opciones" name="opciones" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="opcion1">Responsable Inscripto</option>
+          <option value="opcion2">Consumidor Final</option>
+          <option value="opcion3">Monotributo</option>
+          <option value="opcion4">Excento</option>
+        </select>
+        <label for="doc_fisco"><b>Documento</b></label>
+            <input type="text" name="doc_fisco" required>
+        <br>
+        <label for="calle"><b>Calle: </b></label>
+            <input type="text" name="calle" required>
+        <br>
+        <label for="numero"><b>Número: </b></label>
+            <input type="text" name="numero" required>
+        <br>
+        <label for="codi_post"><b>Codigo Postal: </b></label>
+            <input type="text" name="codi_post" maxlength="8">
+        <br>
+        <label for="locali_empre"><b>Localidad:</b></label>
+            <input type="text" name="locali_empre" required>
+        <br>
+        <label for="telefono"><b>Teléfono: </b></label>
+            <input type="phone" name="telefono" placeholder="(011) 9999-9999">
+        <br>
+        
+            <label for="opciones"><b>Tipo de Industria: </b></label>
+            <select id="opciones" name="opciones" required>
+              <option value="">-- Selecciona una opción --</option>
+              <option value="opcion1">Administración</option>
+              <option value="opcion2">Agro-Industrial</option>
+              <option value="opcion3">Alimenticia</option>
+              <option value="opcion4">Artesanal</option>
+              <option value="opcion5">Automotriz</option>
+              <option value="opcion6">Banco/Financiera</option>
+              <option value="opcion7">Call Center</option>
+              <option value="opcion8">Comercio</option>
+              <option value="opcion9">Comercio Exterior</option>
+              <option value="opcion10">Comunicaciones</option>
+              <option value="opcion11">Diseño</option>
+              <option value="opcion12">Editorial</option>
+              <option value="opcion13">Farmaceutica</option>
+              <option value="opcion14">Gastronomía</option>
+              <option value="opcion15">Hotelería</option>
+              <option value="opcion16">Industrial</option>
+              <option value="opcion17">Informatica/Tecnología</option>
+              <option value="opcion18">Jurídica</option>
+              <option value="opcion19">Laboratorio</option>
+              <option value="opcion20">Media</option>
+              <option value="opcion21">Papelera</option>
+              <option value="opcion22">Petroquimica</option>
+              <option value="opcion23">Publicidad/Marketing</option>
+              <option value="opcion24">Quimica</option>
+              <option value="opcion25">Salud</option>
+              <option value="opcion26">Seguros</option>
+              <option value="opcion27">Servicios</option>
+              <option value="opcion28">Textil</option>
+              <option value="opcion29">Turismo</option>
+              <option value="opcion30">Otra</option> 
+            </select>
+              <label for="otra"><b>Si fuera otra, indique.</b></label>
+              <input type="textarea" requerid>
+           
+            <br>
+        <p>
+            <input type="checkbox" name="termi_condi" required><a href="../PAGES/terminos.html"> Acepto los Términos y Condiciones</a>, Politica de Privacidad.
+        </p><br>
+        <p>
+            <input type="checkbox" name="newsletter"> Quiero recibir Newsletter con novedades.
+        </p><br>
+        <p>
+            <input type="reset" value="Borrar">
+        </p><br>
+        <p>
+            <input type="submit" value="Crear cuenta">
+        </p><br>
+    </form><br><br>
+    <footer>
+        <h3>Redes</h3>
+        <div class="social-icons">
+          <a href="#"><img src="../images/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p>&copy; 2023 Tu Oficina de Empleo</p>
+    </footer>
+
+    <script src="../js/formulario1.js"></script>
+  
+</body>
+
+</html>

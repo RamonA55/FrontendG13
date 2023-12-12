@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="shortcut icon" href="../images/LogoET-2.png" type="image/x-icon">
+  <title>Datos Personales</title>
+</head>
+<body>
+  
+  <header class="menu-header">
+    <div class="header-content">
+      <div class="logo">
+        <img src="../images/LogoET-1.jpg" alt="Descripción del logo" width="100" height="50">
+        <h1>Emplea Talento</h1>
+        <nav class="user-options">
+            <ul>
+              <li><a href="../index.html">Inicio</a>
+              </li><li><a href="../PAGES/noso.html">En equipo</a></li>
+              <li><a href="../PAGES/inicio_empresa.html">Empresas</a></li>
+              <li><a href="../PAGES/sucursales.html">Sucursales</a></li>  
+              <li><a href="../PAGES/inicio_sesion.html">Ingresar</a></li>
+              <li><a href="../PAGES/contacto.html">Contacto</a></li>
+            </ul>
+       </nav>
+      </div>  
+    </div>
+  </header>
+  <main>
+    <!-- Contenido de la sección de datos personales -->
+    <form action="/send/" method="post" target="_blank">
+      <div class="datos_personales">
+        <fieldset>
+          <legend><h2><b>Datos Personales</b></h2></legend><br>
+            <div class="campos_per">
+              <label for="apellido"><b>Apellido: </b></label>
+              <input type="text" id="apellido" name="apellido" required>
+              <label for="nombres"><b>Nombres: </b></label>
+              <input type="text" id="nombres" name="nombres" required>
+              <label for="dni"><b>D.N.I.: </b></label>
+              <input type="number" id="dni" name="dni" required ><br><br>
+              <label for="fecnac"><b>Fecha de nacimiento: </b></label>
+              <input type="date" id="fecnac" name="fecnac" max="2005-09-12" required>&#160&#160
+              <label for="sexo"><b>  Genero: </b></label>
+              <input type="radio" name="boton"> Hombre &#160
+              <input type="radio" name="boton"> Mujer  &#160
+              <input type="radio" name="boton"> Otros &#160&#160&#160 <br>
+              <br>
+              <label for="opciones"><b>     Estado civil:   </b></label>
+              <select id="opciones" name="opciones" required>
+                <option value="">-- Selecciona una opción --</option>
+                <option value="opcion1">Soltero/a</option>
+                <option value="opcion2">Casado/a</option>
+                <option value="opcion3">Concubino/a</option>
+                <option value="opcion4">Separado/a</option>
+                <option value="opcion5">Divorciado/a</option>
+                <option value="opcion6">Viudo/a</option>
+              </select>
+          <br><br>
+              <label for="domicilio"><b>Domicilio: </b></label>
+              <input type="text" id="domicilio" name="domicilio">&#160&#160
+              <label for="localidad"><b>Localidad: </b></label>
+              <input type="text" id="localidad" name="localidad">&#160&#160
+              <label for="codigo"><b>Codigo Postal: </b></label>
+              <input type="number" id="codigo" name="codigo" max="9999">&#160&#160 <br><br>
+              <label for="phone"><b>Teléfono: </b></label>
+              <input type="tel" id="phone" name="phone" placeholder="Ejemplo:(011) 9999-9999"><br><br>
+              <label for="email"><b>Correo electrónico: </b></label>
+              <input type="email" name="email" id="email" required>
+              <label for="contraseña"><b>Contraseña: </b></label>
+              <input type="password" name="contraseña" id="contraseña" required><br><br>
+          
+          <input type="submit" value="Guardar">
+          <input type="reset" value="Borrar">
+            </div>
+        
+  </main>
+<br>
+  <main>
+    <!-- Contenido de la sección de estudios cursados -->
+    <form action="/send/" method="post" target="_blank">
+      <div class="estudios_cursados">
+      <fieldset>
+        <legend><h2><b>Estudios realizados</b></h2></legend>
+<br> 
+      <div class="campos_edu">
+      <form>
+        <label for="opciones"><b>Nivel estudios:</b></label>
+        <select id="opciones" name="opciones" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="opcion1">Secundario</option>
+          <option value="opcion2">Terciario</option>
+          <option value="opcion3">Universitario</option>
+          <option value="opcion4">Master</option>
+          <option value="opcion5">Posgrado</option>
+          <option value="opcion6">Otro</option>
+        </select>
+  <br><br>
+
+  <!-- Lista desplegable de estado de estudios-->
+      <label for="opciones"><b>Estado:</b></label>
+        <select id="opciones" name="opciones" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="opcion7">En curso</option>
+          <option value="opcion8">Graduado</option>
+          <option value="opcion9">Incompleto</option>
+        </select>
+        <p class="block">
+          <label><b>Detalle otros cursos o talleres</b></label> 
+          <textarea name="message" rows="4" required></textarea>
+        </p>
+
+    <input type="submit" value="Guardar">
+    <input type="reset" value="Borrar">
+  </form>
+      <br><br>
+  
+      </div>
+    </main>
+    <br>
+
+  <main>
+    <!-- Contenido de la sección de datos laborales -->
+    <form action="/send/" method="post" target="_blank">
+      <div class="datos_laborales">
+        <fieldset>
+          <form>
+            <legend><h2><b>Datos Laborales</b></h2></legend><br>
+            <div class="campos_lab">
+                <label for="empresa"><b>Empresa: </b></label>
+                <input type="text" id="empresa" name="empresa" required>
+                <label for="dni"><b>C.U.I.T.: </b></label>
+                <input type="number" id="cuit" name="cuit" required ><br><br>
+                <label for="fecini"><b>Fecha de Inicio: </b></label>
+                <input type="date" id="fecini" name="fecini"  required>&#160&#160&#160
+                <label for="fec_egre"><b>Fecha de Egreso: </b></label>
+                <input type="date" id="fec_egre" name="fec_egre"  required>
+                <label for="puesto">Puesto:</label>
+                <input type="text" id="puesto" name="puesto" required>
+                <label for="domici_lab"><b>Domicilio: </b></label>
+                <input type="text" id="domici_lab" name="domici_lab" required>
+                <label for="localidad"><b>Localidad: </b></label>
+                <input type="text" id="localidad" name="localidad" required>
+                <label for="codigo_lab"><b>Codigo Postal: </b></label>
+                <input type="number" id="codig_lab" name="codigo_lab" max="9999" required><br><br>
+                <label for="phone"><b>Teléfono: </b></label>
+                <input type="tel" id="phone" name="phone" placeholder="Ejemplo:(011) 9999-9999"><br> <br>
+                <label for="email"><b>Correo electrónico: </b></label>
+                <input type="email" name="email" id="email" required>
+                <label for="sitio_web"><b>Sitio Web: </b></label>
+                <input type="text" name="sitio_web" id="sitio_web" required>
+
+            <p class="block">
+              <label><b>Detalle las tareas realizadas</b></label> 
+              <textarea id="laboral" name="laboral" rows="6" required></textarea>
+            </p>
+
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Borrar">
+          <br><br>  
+      </fieldset>
+    </div>
+    </form>  
+  </main>
+  <br>
+  <footer>
+    <h3>Redes</h3>
+    <div class="social-icons">
+      <a href="#"><img src="../images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2023 Tu Oficina de Empleo</p>
+  </footer>
+
+</body>
+
+</html>
